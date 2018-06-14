@@ -1,0 +1,87 @@
+
+.button-container{
+  text-align: center;
+  position: relative;
+}
+
+.button, a.button{
+  text-decoration: none;
+  background: $blue;
+  color: $white !important;
+  text-align: center;
+  padding: 20px 50px 20px 50px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  transition: $transition-button;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.button:hover, a.button:hover, .button:focus, a.button:focus{
+  background: $blue-light;
+  color: $white !important;
+  outline: none;
+}
+
+.button__big{
+  font-size: 24px;
+  padding: 20px 80px 20px 80px;
+}
+
+.button__mini{
+  font-size: 14px;
+  padding: 20px 0 20px 0;
+  border-radius: 5px;
+}
+
+.button__red{
+  background: $red !important;
+  color: $white;
+}
+
+.button__red:hover, .button__red:focus{
+  background: $red-light !important;;
+  color: $white;
+}
+
+.button__green{
+  background: $green;
+}
+
+.button__green:hover, .button__green:focus{
+  background: $green-light;
+}
+
+.button__white-hover-shadow:hover, .button__white-hover-shadow:focus{
+  box-shadow: $hover-box-shadow-white;
+}
+
+
+
+@media (max-width: 1200px) {
+
+
+
+}
+
+@media ( max-width: 992px ) {
+
+
+
+}
+
+@media ( max-width: 768px ) {
+
+
+
+}
+
+@media ( max-width: 576px ) {
+
+  .button__big{
+    padding: 20px 60px 20px 60px;
+  }
+
+}

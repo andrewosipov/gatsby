@@ -1,0 +1,65 @@
+.integrated-software ul{
+  background: $grey;
+  width: 764px;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between ;
+  flex-wrap: wrap;
+}
+
+.integrated-software ul li{
+  list-style: none;
+  margin: 22px 37px 22px 37px;
+  flex-basis: 117px;
+}
+
+.integrated-software ul li p{
+  display: block;
+  text-align: center;
+}
+
+.integrated-software ul li h3{
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+}
+
+
+@media (max-width: 1200px) {
+
+
+
+}
+
+@media ( max-width: 992px ) {
+
+
+
+}
+
+@media ( max-width: 768px ) {
+
+  .integrated-software ul {
+    width: 100%;
+  }
+
+  .integrated-software ul li{
+    margin: 22px 30px 22px 30px;
+  }
+
+}
+
+@media ( max-width: 576px ) {
+
+  .integrated-software ul{
+    width: 100%;
+    justify-content: center
+  }
+
+  .integrated-software ul li{
+    margin: 22px 30px 22px 30px;
+  }  
+
+}

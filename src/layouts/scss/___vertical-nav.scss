@@ -1,0 +1,59 @@
+
+.vertical-nav{
+  padding: 50px 0 40px 0;
+  margin: 0;  
+}
+
+.vertical-nav li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.vertical-nav > li > a{
+  font-size: 16px;
+  display: block;
+  padding: 10px 0px 10px 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+.vertical-nav > li > a.active{
+  color: $blue;
+}
+
+.vertical-nav > li > a.active:before{
+  content: "";
+  display: block;
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: $blue;
+}
+
+@media (max-width: 1200px) {
+
+
+
+}
+
+@media ( max-width: 992px ) {
+
+  
+
+}
+
+@media ( max-width: 768px ) {
+
+
+
+}
+
+@media ( max-width: 576px ) {
+
+
+
+}

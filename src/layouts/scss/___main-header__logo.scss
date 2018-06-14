@@ -1,0 +1,35 @@
+.main-header__logo{
+  flex: 0 0 179px;
+  width: 179px;
+}
+
+.main-header__logo_a{
+  font-size: 0px;
+}
+
+
+@media (max-width: 1200px) {
+
+
+
+}
+
+@media ( max-width: 992px ) {
+
+  .main-header__logo{
+    flex: 0 0 179px;
+  }
+
+}
+
+@media ( max-width: 768px ) {
+
+
+
+}
+
+@media ( max-width: 576px ) {
+
+
+
+}

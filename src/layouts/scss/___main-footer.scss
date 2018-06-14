@@ -1,0 +1,171 @@
+.main-footer{
+  padding: 20px 0 20px 0;
+  margin-top: 20px;
+  background: $grey;
+  width: 100%;
+}
+
+.main-footer__container{
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.main-footer__contacts{
+  flex: 3;
+}
+
+.main-footer__nav-and-copyright{
+  flex: 1;
+}
+
+
+.main-footer__phone{
+  font-size: 24px;
+  margin: 0;
+  position: relative;
+  padding-left: 56px;
+  height: 65px;
+}
+
+.main-footer__phone:before{
+  content: "";
+  display: block;
+  background: url(../img/icons/mf__phone.png) 0 0 no-repeat;
+  width: 36px;
+  height: 36px;
+  top: 5px;
+  left: 0;
+  position: absolute;
+}
+
+.main-footer__phone .content__red-text{
+  white-space: nowrap;
+}
+
+.main-footer__follow{
+  font-size: 16px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.main-footer__social-links_ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.main-footer__social-links_li{
+  list-style: none;
+  padding: 0;
+  margin: 0 15px 0 0;
+  flex: 0 0 64px;
+}
+
+.main-footer__social-links_a{
+  display: block;
+  width: 64px;
+  height: 64px;
+  font-size: 0;
+}
+
+.main-footer__social-links_facebook{
+  background: url(../img/icons/mf__social-facebook.png);
+}
+
+.main-footer__social-links_twitter{
+  background: url(../img/icons/mf__social-twitter.png);
+}
+
+.main-footer__social-links_youtube{
+  background: url(../img/icons/mf__social-youtube.png);
+}
+
+
+.main-footer__nav_ul{
+  margin: 0;
+  padding: 0;
+}
+
+.main-footer__nav_li{
+  list-style: none;
+  margin: 0 0 6px 0;
+  padding: 0;
+}
+
+.main-footer__nav_a{
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.main-footer__copyright{
+  font-size: 12px;
+  font-weight: lighter;
+  margin-top: 20px;
+  color: $grey-middle;
+}
+
+
+@media (max-width: 1200px) {
+
+
+
+}
+
+@media ( max-width: 992px ) {
+
+  .main-footer__container{
+    padding-bottom: 30px;
+  }
+
+  .main-footer__copyright{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+
+}
+
+@media ( max-width: 768px ) {
+
+
+
+}
+
+@media ( max-width: 576px ) {
+
+  .main-footer__container{
+    display: block;
+  }
+
+  .main-footer__phone{
+    line-height: 32px;
+    width: 218px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-footer__phone:before{
+    padding-bottom: 20px;
+  }
+
+  .main-footer__follow {
+    text-align: center;
+    margin: 40px 0 40px 0;
+  }
+
+  .main-footer__social-links_ul{
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .main-footer__nav_ul{
+    text-align: center;
+  }
+
+}

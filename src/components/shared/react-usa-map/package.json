@@ -1,0 +1,123 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "react-usa-map",
+        "scope": null,
+        "escapedName": "react-usa-map",
+        "name": "react-usa-map",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "c:\\server\\denwer2\\home\\frontend\\www\\musicfirst-3"
+    ]
+  ],
+  "_from": "react-usa-map@latest",
+  "_id": "react-usa-map@1.3.0",
+  "_inCache": true,
+  "_location": "/react-usa-map",
+  "_nodeVersion": "6.9.5",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/react-usa-map-1.3.0.tgz_1507484851495_0.2894042516127229"
+  },
+  "_npmUser": {
+    "name": "gabidavila",
+    "email": "me@gabriela.io"
+  },
+  "_npmVersion": "5.4.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-usa-map",
+    "scope": null,
+    "escapedName": "react-usa-map",
+    "name": "react-usa-map",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-usa-map/-/react-usa-map-1.3.0.tgz",
+  "_shasum": "7cb90439cc13b672c3c609574d3bd1a48cf42791",
+  "_shrinkwrap": null,
+  "_spec": "react-usa-map",
+  "_where": "c:\\server\\denwer2\\home\\frontend\\www\\musicfirst-3",
+  "author": {
+    "name": "Gabriela D'Avila Ferrara",
+    "email": "me@gabriela.io"
+  },
+  "bugs": {
+    "url": "https://github.com/gabidavila/react-usa-map/issues"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0"
+  },
+  "description": "React component with all USA States with customizable options",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-plugin-inline-json-import": "^0.2.1",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-15": "^1.0.1",
+    "eslint": "^4.8.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^21.2.1",
+    "nodemon": "^1.12.1",
+    "react": "^15.4.2",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-test-renderer": "15"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-qzS7IMZnv+Ar6Oq3K+xGAMTjlGYzVbK3enBwljfwqj/QoyreoLWFjuRry+IQUZ8IapBlt9gZtmcWyWwfiD5bzA==",
+    "shasum": "7cb90439cc13b672c3c609574d3bd1a48cf42791",
+    "tarball": "https://registry.npmjs.org/react-usa-map/-/react-usa-map-1.3.0.tgz"
+  },
+  "gitHead": "fabc3fa9abf56fc911a58a21fc32f434a1867529",
+  "homepage": "https://github.com/gabidavila/react-usa-map#readme",
+  "keywords": [
+    "react-component",
+    "react",
+    "usa map",
+    "map",
+    "svg"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "gabidavila",
+      "email": "me@gabriela.io"
+    }
+  ],
+  "name": "react-usa-map",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabidavila/react-usa-map.git"
+  },
+  "scripts": {
+    "lint": "eslint ./src",
+    "lintfix": "eslint ./src --fix",
+    "prepublish": "babel --plugins transform-es2015-modules-umd src --ignore __tests__ --out-dir ./dist",
+    "pretest": "yarn run lint",
+    "test": "jest --coverage"
+  },
+  "version": "1.3.0"
+}

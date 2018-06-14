@@ -1,0 +1,153 @@
+.inside-container.contact{
+  flex-direction: row;
+}
+
+.contact h3{
+  color: $blue;
+  font-weight: normal;
+}
+
+.contact h3:before{
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+}
+
+.contact h3.email-title:before{
+  background: url(../img/icons/ico_email.png) 0 50% no-repeat;
+}
+
+.contact h3.phone-title:before{
+  background: url(../img/icons/ico_phone.png) 0 50% no-repeat;
+}
+
+.contact h3.fax-title:before{
+  background: url(../img/icons/ico_fax.png) 0 50% no-repeat;
+}
+
+.contact__column{
+  flex: 1 1 10%;
+  padding-right: 2%;
+}
+
+.contact__column + .contact__column{
+  flex: 1 1 31%;
+}
+
+.contact__block{
+  margin: 0 0 20px 0;
+}
+
+.contact__block p{
+  margin:0 0 5px 0;
+}
+
+.contact__block .title{
+  font-weight: bold;
+  color: $blue;
+}
+
+.contact__block a{
+  color: $red;
+  text-decoration: none;
+}
+
+.contact__block a:hover{
+  color: $red-light;
+}
+
+.contact__map{
+  position: relative;
+}
+
+.contact__map svg{
+  width: 100%;
+  height: 400px;
+}
+
+.inside-container.contact .button-container{
+  flex: 1 0 100%;
+  margin: 40px 0 40px 0;
+}
+
+.contact__form{
+  flex: 1 0 100%;
+  position: relative;
+  margin: 0 0 40px 0;
+}
+
+.mm-popup__box__body .contact__form{
+  margin-bottom: 0;
+}
+
+.contact__form iframe{
+  margin: 0 auto 0 auto;
+  display: block;
+  width: 100%;
+  overflow-x:hidden;
+  overflow-y:hidden
+}
+
+.contact__form.modal iframe{
+  width: 700px;
+  overflow: hidden !important;
+}
+
+.contact__form iframe::-webkit-scrollbar {
+  display: none !important;
+}
+
+.contact__form iframe body.form-ready{
+  overflow: hidden !important;
+}
+
+.contact__form iframe[frameborder="1"]{
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
+
+/*.contact__form:after{
+  content: '';
+  width: 17px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  position: absolute;
+  background: #FFF;
+}*/
+
+@media (max-width: 1200px) {
+
+
+
+}
+
+@media ( max-width: 992px ) {
+
+
+
+}
+
+@media ( max-width: 768px ) {
+
+  .contact__form:after{
+    display: none;
+  }
+
+  .contact__form.modal iframe{
+    width: 90%;
+  }
+
+}
+
+@media ( max-width: 576px ) {
+
+
+
+}
+
+
