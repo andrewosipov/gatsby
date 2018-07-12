@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import MainMenu from '../mainMenu/index';
-import logo from './logo.png';
+import logo from '../../../../layouts/img/logo.svg';
 
 const MainHeader = (data) => {
-    const button = ( data.location.pathname != "/applications/musicfirst-junior/" ) ? (<p className="main-header__button-container"><Link to="/musicfirst-classroom-demo-request/" className="button button__free-trial button__mini">Free Trial</Link></p>) : null;
+    const button = ( data.location.pathname !== "/applications/musicfirst-junior/" ) ? (<p className="main-header__button-container"><Link to="/musicfirst-classroom-demo-request/" className="button button__free-trial button__mini">Free Trial</Link></p>) : null;
     return(
         <header className="main-header">
             <div className="main-header__logo">
@@ -16,7 +16,7 @@ const MainHeader = (data) => {
             {button}
         </header>
     );
-}
+};
 
 export default MainHeader;
 

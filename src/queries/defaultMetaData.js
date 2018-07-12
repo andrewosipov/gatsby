@@ -1,5 +1,5 @@
-const defaltMetaDataQuery = `
-defaultMetaData: contentfulSeoMetaData( contentful_id: { eq: "3yQVjVBx2gQSMY6q4oASCq" } ) {
+module.exports = `
+        contentfulSeoMetaData( contentful_id: { eq: "3yQVjVBx2gQSMY6q4oASCq" } ) {
                     id
                     metaTitle
                     metaDescription{
@@ -21,5 +21,3 @@ defaultMetaData: contentfulSeoMetaData( contentful_id: { eq: "3yQVjVBx2gQSMY6q4o
                     }
               }
 `;
-
-export default defaltMetaDataQuery;

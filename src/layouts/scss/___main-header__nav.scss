@@ -82,6 +82,17 @@
   color: $blue;
 }
 
+.main-header__nav > ul ul ul{
+  position: relative;
+  width: 290px;
+  box-shadow: none;
+  margin: 0;
+}
+
+.main-header__nav > ul ul ul a{
+  display: block;
+  padding-left: 35px;
+}
 
 @media (max-width: 1200px) {
 
@@ -199,6 +210,20 @@
     padding-bottom: 10px;
     padding-left: 40px;
     color: $white;
+  }
+
+  .main-header__nav.open ul > li > ul > li > ul{
+    width: auto;
+  }
+
+  .main-header__nav.open ul > li > ul > li > ul > li{
+    margin-left: 30px;
+    width: calc( 100% - 30px );
+  }
+
+  .main-header__nav.open ul > li > ul > li > ul > li > a{
+    padding-left: 40px;
+    width: calc( 100% - 90px );
   }
 
   .main-header__nav.open ul > li > ul > li:before{

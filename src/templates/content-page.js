@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 
-import PageContent from '../components/shared/content/pageContent';
+import PageContent from '../components/PageContent';
 
 export default function Template( props ) { //console.dir(props);
     // get the contentful data

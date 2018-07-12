@@ -14,15 +14,31 @@ class MainMenu extends React.Component {
         this.setState({
             isOpen: !this.state.isOpen
         })
+    };
+
+    getMenu(){
+        const { items } = this.props;
+        return items.map((item, index) => {
+            let mainSlug = ( item.reference ) ? item.reference.slug : item.slug;
+            return <li key={item.id}><Link to={mainSlug} onClick={this.setIsOpen}>{item.title}</Link>{this.getSubMenu(item.subMenu)}</li>
+        })
+    }
+
+    getSubMenu(items){
+        if( !items || !items.map ) return null;
+
+        const subMenuItems = items.map((item, index) => {
+            let mainSlug = ( item.reference ) ? item.reference.slug : item.slug;
+            return <li key={item.id}><Link to={mainSlug} onClick={this.setIsOpen}>{item.title}</Link>{this.getSubMenu(item.subMenu)}</li>
+        });
+        return (<ul>{subMenuItems}</ul>);
     }
 
     render() {
-        //console.log(this.props);
-        const className = ( this.state.isOpen ) ? 'open' : "";
         let menuItems = [];
         for( let i=0; i<this.props.items.length; i++ ){
             let item = this.props.items[i];
-            let mainSlug = ( item.reference!=null ) ? item.reference.slug : item.slug;
+            let mainSlug = ( item.reference != null ) ? item.reference.slug : item.slug;
             let subMenu;
             if( item.subMenu != null ){
                 let subMenuItems = [];
@@ -36,11 +52,12 @@ class MainMenu extends React.Component {
             let element = (<li key={item.id}><Link to={mainSlug} onClick={this.setIsOpen}>{item.title}</Link>{subMenu}</li>);
             menuItems.push(element);
         }
+        const className = ( this.state.isOpen ) ? 'open' : "";
         return (
-            <nav className={"main-header__nav " + className }>
+            <nav className={ "main-header__nav " + className}>
                 <button className="main-header__mobile-nav_toogler" onClick={this.setIsOpen}>Mobile menu toggler</button>
                 <ul>
-                    {menuItems}
+                    {this.getMenu()}
                 </ul>
             </nav>
         );

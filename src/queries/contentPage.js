@@ -1,4 +1,4 @@
-const contentPageQuery = `content: allContentfulContentPage{
+module.exports = `allContentfulContentPage{
                   edges{
                     node{
                           id
@@ -8,9 +8,21 @@ const contentPageQuery = `content: allContentfulContentPage{
                                 id
                                 title
                                 subTitle
+                                noteLabel
+                                noteTitle
+                                noteText
+                                noteColor
                                 description{
                                       id
                                       description
+                                }
+                                fullScreenImage{
+                                      id
+                                      resolutions(width:1950, height:540, quality: 100, resizingBehavior: PAD ){
+                                            src
+                                            width
+                                            height
+                                      }
                                 }
                                 image{
                                       id
@@ -20,8 +32,10 @@ const contentPageQuery = `content: allContentfulContentPage{
                                             height
                                       }
                                 }  
-                                video                    
+                                video  
+                                typeFormUrl                  
                           }
+                          contentCollectionTitle
                           contentCollection{
                                 id
                                 title
@@ -33,7 +47,7 @@ const contentPageQuery = `content: allContentfulContentPage{
                                 }
                                 image{
                                       id
-                                      round: resolutions(width:170, height:170, quality: 100, resizingBehavior: CROP ){
+                                      round: resolutions(width:170, height:170, quality: 100, resizingBehavior: PAD ){
                                             src
                                             width
                                             height
@@ -70,6 +84,12 @@ const contentPageQuery = `content: allContentfulContentPage{
                                       }
                                 }                            
                           }
+                          requestQuoteText
+                          requestQuoteUrl{
+                            id
+                            requestQuoteUrl
+                          }
+                          hideApplicationButtons
                           templatePage
                           templateCollection{
                                 id
@@ -111,7 +131,4 @@ const contentPageQuery = `content: allContentfulContentPage{
                           }
                     }
                   }                    
-              }`;
-
-
-export default contentPageQuery;
+              }  `;

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import MainHeader from '../components/shared/template/mainHeader';
 import MainFooter from '../components/shared/template/mainFooter';
-import CookiesBanner from '../components/shared/template/cookiesBanner';
+import CookiesBanner from '../components/shared/template/CookiesBanner';
 
 import './scss/index.scss'
 
@@ -55,6 +55,15 @@ export const query  = graphql`
                                 reference{
                                   id
                                   slug
+                                }
+                                subMenu{
+                                    id
+                                    title
+                                    slug
+                                    reference{
+                                      id
+                                      slug
+                                    }
                                 }
                           }
                     }

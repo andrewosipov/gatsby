@@ -1,5 +1,5 @@
 import React from 'react';
-import PageContent from '../components/shared/content/pageContent';
+import PageContent from '../components/PageContent';
 
 export default function Template( props ) {
     const data = props.pathContext;

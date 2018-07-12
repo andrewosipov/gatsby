@@ -1,0 +1,62 @@
+module.exports = `
+
+    contentfulNewsPage( contentful_id: { eq: "OuV9Roxy2ySEYYEiKyCSo" } ) { 
+                    id
+                    title
+                    collection{
+                          id
+                          title
+                          slug
+                          preview{
+                                id
+                                preview            
+                          }
+                          description{
+                                id
+                                description
+                          }
+                          image{
+                                id
+                                resolutions(width:360, height:279, quality: 100, resizingBehavior: PAD ){
+                                      src
+                                      width
+                                      height
+                                }
+                          }
+                    }
+                    seoMetaData{
+                            id
+                            metaTitle
+                            metaDescription{
+                                  id
+                                  metaDescription
+                            }
+                            metaKeywords
+                            openGraphTitle
+                            openGraphDescription{
+                                  id
+                                  openGraphDescription
+                            }
+                            openGraphUrl
+                            openGraphImage{
+                                  id
+                                  file{
+                                      url
+                                  }
+                            }
+                    }
+                    subMenu{
+                          id
+                          menuItems{
+                                id
+                                title
+                                slug
+                                reference{
+                                  id
+                                  slug
+                                }
+                          }              
+                    }
+              } 
+
+`;

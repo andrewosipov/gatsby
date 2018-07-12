@@ -22,16 +22,29 @@
 }
 
 .column-three{
-    flex: 1 1 250px;
+    flex: 1 1 300px;
     flex-wrap: wrap;
-    max-width: 250px;
+    max-width: 300px;
     margin-left: 0;
     margin-right: 0;
+}
+
+.column-right .column-three{
+    max-width: 270px;
+}
+
+.column-three .content-block__text{
+    width: auto !important;
 }
 
 .column-three:nth-child(2){
     margin-left: 15px;
     margin-right: 15px;
+}
+
+.column-three h3{
+    text-align: center;
+    color: $blue;
 }
 
 .inside-column-container{

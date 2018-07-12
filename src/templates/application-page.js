@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 
-import ApplicationPage from '../components/shared/applications/applicationPage';
+import ApplicationPage from '../components/shared/Applications/ApplicationPage';
 
 export default function Template( props ) { //console.dir(props);
     // get the contentful data
